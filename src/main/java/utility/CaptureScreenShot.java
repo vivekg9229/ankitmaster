@@ -21,7 +21,7 @@ public class CaptureScreenShot extends TestBase
 	public static void screenShot(String nameOfMethod) throws IOException
 	{
 		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest=new File("C:\\Users\\ankit\\eclipse-workspace\\SeleniumFramework26\\ScreenShot\\"+nameOfMethod+"----"+getDate()+".jpeg");
+		File dest=new File("C:\\Users\\VIVEK\\Downloads\\AnkitPipeline\\ScreenShot\\"+nameOfMethod+"----"+getDate()+".jpeg");
 		FileHandler.copy(source, dest);
 	}
 }
